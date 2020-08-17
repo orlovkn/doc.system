@@ -10,7 +10,12 @@ sudo apt install mkdocs
 mkdocs serve
 ```
 
-### build an htmlversion
+### build an html version
 ```
 mkdocs build
 ```
+
+### mkdocs links
+[documentation](https://www.mkdocs.org/)
+
+[cinder theme info](https://sourcefoundry.org/cinder/)
