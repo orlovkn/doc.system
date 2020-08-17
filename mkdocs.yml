@@ -1,0 +1,28 @@
+site_name: docs
+site_url: https://docs.orlovkn.com/
+
+theme:
+  name: null
+  custom_dir: cinder
+  colorscheme: github
+
+nav:
+  - php: index.md
+  - java: java.md
+  - kotlin: kotlin.md
+  - python: index.md
+  - bitrix:
+    - Empty template: bitrix/emptytmpl.md
+  - other:
+    - git: other/git.md
+    - composer: other/composer.md
+    - php storm: other/phpstorm.md
+    - netcat: other/index.md
+    - jquery: other/index.md
+    - css: other/index.md
+    - ubuntu: other/ubuntu.md
+    - introduction: other/introduction.md
+    - links: other/links.md
+
+markdown_extensions:
+  - admonition
