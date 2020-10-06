@@ -1,27 +1,14 @@
-Основные команды
-========
+## composer
 
-Инициализация проекта
 ```
 composer init
-```
-
-Инициализация проекта
-```
 composer install
-```
-
-Обновление проекта
-```
 composer update
-```
-
-удаление пакета
-```
 composer remove vendor/package
 ```
 
-## Примеры composer.json
+
+examples composer.json
 
 ```
 {
@@ -61,21 +48,6 @@ composer remove vendor/package
         "box/spout": "^2.7",
         "phpoffice/phpspreadsheet": "1.0.0-beta"
     }
-}
-```
-
-```
-{
-	"extra": {
-		"installer-paths": {
-				"bitrix/modules/{$name}/": ["type:bitrix-module"]
-			}
-	},
-	"require": {
-		"andreyryabin/sprint.options": "dev-master",
-		"arrilot/bitrix-migrations": "^2.3",
-		"symfony/var-dumper": "^3.3"
-	}
 }
 ```
 
@@ -124,24 +96,44 @@ composer remove vendor/package
 
 ```
 {
-    "name": "orlov/mm",
-    "description": "lesson",
-    "type": "project",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "orlovkn",
-            "email": "to@konstantin-orlov.ru"
-        }
-    ],
-    "minimum-stability": "stable",
-    "require": {},
-  	"autoload": {
-	  	"psr-4": {
-		  	"liw\\": ""
-		}
+  "require": {
+    "slim/slim": "4.*",
+    "nyholm/psr7": "^1.3",
+    "nyholm/psr7-server": "^1.0",
+    "guzzlehttp/psr7": "^1.6",
+    "http-interop/http-factory-guzzle": "^1.0",
+    "laminas/laminas-diactoros": "^2.4",
+    "tuupola/slim-basic-auth": "^3.2"
+  },
+  "autoload": {
+	"psr-4": {
+	  "Api\\App\\": "app"
 	}
+  }
+}
+
+```
+
+
+```
+"autoload": {
+    "classmap": [
+        "services/myserv/Ksl.php"
+    ],
+    "psr-4": {
+        "Services\\": "services",
+        "liw\\": ""
+    },
+    "files": [
+        "config.php"
+    ]
 }
 ```
-### Ссылки
-[Статья на Хабре](http://habrahabr.ru/post/145946/)
+
+```
+composer dump-autoload -o
+```
+
+#### links
+
+- [хабр](http://habrahabr.ru/post/145946/)
