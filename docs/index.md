@@ -1,21 +1,25 @@
 ## languages
 
 - php
-    - symphony
+    - [symphony](/php/symphony/)
 - python
     - common
     - django
 - java
 - kotlin
-- bitrix
-- netcat 
-    - [nc_db_table](/netcat/db/)
+- cms
+    - bitrix
+    - netcat 
+        - [nc_db_table](/netcat/db/)
 
 ## technologies
 
 - [git](/tech/git/)
 - [composer](/tech/composer/)
 - [npm](/tech/npm/)
+- [rest](/tech/rest/)
+- vue.js
+- xdebug
 - ubuntu
     - [lamp](/ubuntu/lamp/)
 
